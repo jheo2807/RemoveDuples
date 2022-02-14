@@ -1,10 +1,3 @@
-"""
-Streamlit Cheat Sheet
-App to summarise streamlit docs v0.71.0 for quick reference
-There is also an accompanying png version
-https://github.com/daniellewisDL/streamlit-cheat-sheet
-v0.71.0 November 2020 Daniel Lewis and Austin Chen
-"""
 import io
 import json
 import os
@@ -145,7 +138,7 @@ def build_div(samples):
 def demo_body(data, limit=in_num):
     samples = random.sample(data, limit)
     divs = build_div(samples)
-    with st.beta_container():
+    with st.container():
         print(len(average_time.get('download_image')))
         print(len(average_time.get('convert_img2hash')))
         print(len(average_time.get('remove_duplicated')))
